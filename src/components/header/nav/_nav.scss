@@ -1,0 +1,31 @@
+.nav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav__item {
+    &:not(:first-child) {
+        margin-left: 25px;
+    }
+
+    &.active .nav__link,
+    &:hover .nav__link {
+        color: $accent-color;
+    }
+}
+
+.nav__link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    transition: color .1s ease-in-out;
+
+    @include rem(13);
+
+    &:hover {
+        text-decoration: none;
+    }
+}

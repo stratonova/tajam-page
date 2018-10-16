@@ -1,0 +1,58 @@
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  font-size: $root-font + px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.maincontent {
+  flex: 1 0;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid $accent-color;
+  color: $accent-color;
+  text-transform: uppercase;
+  border-radius: 2px;
+  min-width: 120px;
+  padding: 7px 14px;
+  transition: color .1s ease-in-out,
+              background .1s ease-in-out,
+              transform .1s ease-in-out;
+
+  @include rem(16);
+
+  &:hover {
+    // color: $text-white;
+    // border-color: $text-white;
+    transform: scale(1.05)
+  }
+}
+
+.overlay {
+  position: relative;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $secondary-color, $alpha: .85);
+  }
+}
+
+.section {
+  padding: 70px 0;
+}

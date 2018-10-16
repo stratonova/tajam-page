@@ -1,0 +1,43 @@
+.about {
+    width: 100%;
+    background-color: #fff;
+    padding: 70px 0;
+}
+
+.about__img-wrap {
+    margin-left: 55px;
+}
+
+.about__img {
+    max-width: 235px;
+    max-height: 230px;
+}
+
+.about__descr-container {
+    margin-left: 45px;
+}
+
+.about__title {
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #403d4b;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+
+    @include rem(22);
+}
+
+
+.about__descr {
+    color: #403d4b;
+    font-weight: 300;
+    margin-top: 28px;
+
+    @include rem(14);
+}
+
+.about__slider-btn {
+    margin-top: 30px;
+}
